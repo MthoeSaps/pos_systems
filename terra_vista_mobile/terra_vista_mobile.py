@@ -28,9 +28,10 @@ st.divider()
   #  st.image(img,caption="Explore our world the tech savy way", width=320)
     
 with st.sidebar:
-    img = Image.open("terra_vista_mobile/img/Blue and White Minimalist Travel App Logo_20240427_135856_0000.png")
-    st.image(img,caption="Explore our world the tech savy way", width=320)
-    st.divider()
+    with st.container(border="True", height=300):
+        img = Image.open("terra_vista_mobile/img/Blue and White Minimalist Travel App Logo_20240427_135856_0000.png")
+        st.image(img,caption="Explore our world the tech savy way", width=280)
+        st.divider()
     
     selected = option_menu(
     menu_title = "Terra Vista Mobile Menu",
