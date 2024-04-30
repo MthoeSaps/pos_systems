@@ -68,7 +68,7 @@ if selected == "🗺 Maps and Visuals":
     with st.container(border=True):
         st.subheader("Bulawayo Maps 🗺")
     st.write("Use the select box below to switch between maps.")
-    menu = ["Bulawayo Open Street Map", "Bulawayo Carto Positron Map", "Bulawayo Carto Darkmatter Map"]
+    menu = ["Bulawayo Open Street Map", "Bulawayo Carto Darkmatter Map"]
     choice = st.selectbox("Analyse Bulawayo Interactive Maps",menu)
     st.divider()
     if choice == "Bulawayo Open Street Map":
@@ -106,40 +106,7 @@ if selected == "🗺 Maps and Visuals":
             st.plotly_chart(fig)
     else:
         pass
-    if choice == "Bulawayo Carto Positron Map":
-        if uploaded_file is not None:
-            st.subheader("Bulawayo Carto Positron Map")
-            df = pd.read_excel(uploaded_file)
-            fig = px.scatter_mapbox(df, lat="latitude ", lon="longitude",
-                            hover_name="Suburb",
-                            text=None,
-                            hover_data=None,
-                            custom_data=None,
-                            size=None,
-                            animation_frame=None,
-                            animation_group=None,
-                            category_orders=None,
-                            labels=None,
-                            color_discrete_sequence=None,
-                            color_discrete_map=None,
-                            color_continuous_scale=None,
-                            range_color=None,
-                            color_continuous_midpoint=None,
-                            opacity=None,
-                            size_max=None,
-                            center=None,
-                            mapbox_style=None,
-                            title=None,
-                            template=None,
-                            width=None,
-                            color="Suburb",
-                            zoom=10,
-                            height=400)
-            fig.update_layout(mapbox_style="carto-positron")
-            fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
-            st.plotly_chart(fig)
-    else:
-        pass
+    
     if choice == "Bulawayo Carto Darkmatter Map":
         if uploaded_file is not None:
             st.subheader("Bulawayo Carto Darkmatter Map")
