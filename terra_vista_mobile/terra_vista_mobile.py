@@ -199,12 +199,7 @@ if selected == "🗺 Maps and Visuals":
                 template="plotly_white"
                 )
             st.plotly_chart(bar)
-    with st.container(border=True):
-        st.title("Data Tables")
-    if uploaded_file:
-        df = pd.read_excel(uploaded_file,
-                           #usecols = "D:I",
-                           engine="openpyxl")
+    
        
         
 if selected == "☎Contact me here":
