@@ -20,7 +20,7 @@ from PIL import Image
 
 st.set_page_config(page_title="Terra Vista Bulawayo Mapping Engine", page_icon=":🌏:", layout="wide", initial_sidebar_state="expanded")
 
-st.title("Terra Vista Mobile 🗺")
+st.title("Terra Vista Mobile")
 st.text("Mobile Edition")
 st.divider()
 #with st.container(border=True):
@@ -30,7 +30,7 @@ st.divider()
 with st.sidebar:
     with st.container(border=True, height=300):
         img = Image.open("terra_vista_mobile/img/Blue and White Minimalist Travel App Logo_20240427_135856_0000.png")
-        st.image(img,caption="Explore our world the tech savy way", width=260)
+        st.image(img,caption="Explore Bulawayo the tech savy way", width=250)
         st.divider()
     
     selected = option_menu(
