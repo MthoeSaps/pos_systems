@@ -1,0 +1,9 @@
+streamlit 
+pandas
+openpyxl
+numpy
+plotly
+geopandas
+scikit-learn
+streamlit-extras
+streamlit-option-menu
