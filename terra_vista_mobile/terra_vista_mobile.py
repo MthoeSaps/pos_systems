@@ -205,23 +205,7 @@ if selected == "🗺 Maps and Visuals":
         df = pd.read_excel(uploaded_file,
                            #usecols = "D:I",
                            engine="openpyxl")
-        with st.container(border=True):
-            st.subheader("Uploaded excel database", divider=True)
-            st.dataframe(df)
-            st.text("1st number higlights number of rows in the dataset")
-            st.text("2nd number highlights number of columns in the dataset")
-            df.head()
-            df.shape
-    if uploaded_file:
-        st.subheader("Filtered Suburb dataset", divider=True)
-        df = pd.read_excel(uploaded_file,
-                           #usecols = "D:I",
-                           engine="openpyxl")    
-        suburbs = df["Suburb"].unique().tolist()
-        suburbs
-        suburb_selection = ["latitude ", "longitude"]
-        mask = df["Suburb"].isin(suburb_selection)
-        df[mask]   
+       
         
 if selected == "☎Contact me here":
     st.subheader("Use these buttons to get in touch with me")
