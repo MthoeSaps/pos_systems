@@ -67,7 +67,7 @@ if selected == "🗺 Maps and Visuals":
     st.divider()
     with st.container(border=True):
         st.subheader("Bulawayo Maps 🗺")
-    st.text("Use the select box below to switch between maps.")
+    st.write("Use the select box below to switch between maps.")
     menu = ["Bulawayo Open Street Map", "Bulawayo Carto Positron Map", "Bulawayo Carto Darkmatter Map"]
     choice = st.selectbox("Analyse Bulawayo Interactive Maps",menu)
     st.divider()
