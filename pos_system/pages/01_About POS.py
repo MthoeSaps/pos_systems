@@ -8,11 +8,8 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 st.toast("Data Tree", icon="🪐")
-colored_header(
-        label = "Data Tree",
-        description = "Saint Inc. Data Science and analysis engine",
-        color_name = "orange-70"
-    )
+st.title("Data Tree Saint Inc. Data Science and analysis engine")
+
 tab1,tab2,tab3,tab4,tab5 = st.tabs([":blue[**Home**]", ":blue[**Data Representation**]", ":blue[**GIS**]", ":blue[**About**]", ":blue[**FAQ**]"])
 with tab1:
         st.empty()
