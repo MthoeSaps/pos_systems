@@ -1,11 +1,10 @@
-from traceback import clear_frames
 import streamlit as st
 import pandas as pd
 import os
 import plotly.graph_objects as go
 import plotly.express as px
 import datetime
-
+from traceback import clear_frames
 from streamlit.logger import get_logger
 from streamlit_option_menu import option_menu
 
@@ -87,17 +86,17 @@ def save_transaction(customer_name, item_name, item_price, item_quantity, total,
     #st.dataframe(df)
      
     #__check if csv file exists
-    if not os.path.exists("E:\pos_system\dbs\pos_transactions.csv"):
-        df.to_csv("E:\pos_system\dbs\pos_transactions.csv", index = False)
+    if not os.path.exists("pos_system\dbs\pos_transactions.csv"):
+        df.to_csv("pos_system\dbs\pos_transactions.csv", index = False)
     else:
-        df.to_csv("E:\pos_system\dbs\pos_transactions.csv", mode="a", index=False, header=not os.path.exists("E:\pos_system\dbs\pos_transactions.csv"))
+        df.to_csv("pos_system\dbs\pos_transactions.csv", mode="a", index=False, header=not os.path.exists("pos_system\dbs\pos_transactions.csv"))
         st.success("Transaction Saved Succesfully!", icon ="🅿️")
         
 def display_inventory():
     """Function to display inventory system"""
     #__read the csv file
-    if os.path.exists("E:\pos_system\dbs\pos_transactions.csv"):
-        df = pd.read_csv("E:\pos_system\dbs\pos_transactions.csv")
+    if os.path.exists("pos_system\dbs\pos_transactions.csv"):
+        df = pd.read_csv("pos_system\dbs\pos_transactions.csv")
         
         #__group the data by item name and calculate the total quantity
         inventory_data = df.groupby("Item Name")["Item Quantity"].sum().reset_index()
