@@ -7,8 +7,7 @@ import datetime
 from traceback import clear_frames
 from streamlit.logger import get_logger
 from streamlit_option_menu import option_menu
-
-from streamlit_extras.colored_header import colored_header
+#from streamlit_extras.colored_header import colored_header
 from streamlit_extras.metric_cards import style_metric_cards
 from streamlit_extras.streaming_write import write
 from streamlit_extras.badges import badge
