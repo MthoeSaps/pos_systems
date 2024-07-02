@@ -24,13 +24,11 @@ def pos_system():
     )
     st.write("- :gray[**Welcome to POS system, Our Valued Customer**]")
     st.write("""
-             - :gray[**This is a payment Desgined by Mthokozisi Sapuwo and Saint Inc. With purpose to support SMEs process Payments and payment data efficiently.**]
-
-             - :gray[**Kindly open The sidebar for more information about Us and Co-ops😊🅿️.**]
+             - :gray[**Payment Designed by Mthokozisi Sapuwa and Saint Inc. With the purpose to support SMEs process Payments and payment data efficiently.**]
              """)
     st.divider()
     
-    st.write("- :blue[**Fill out the form and submit to get started**]")
+    st.write("- :blue[**POS form, fill & submit to get started**]")
     
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -104,11 +102,6 @@ def display_inventory():
         st.divider()
         st.title(":blue[**Inventory System**]")
 
-        st.write("""
-             - :gray[**This is a payment Desgined by Mthokozisi Sapuwo and Saint Inc. With purpose to support SMEs process Payments and payment data efficiently.**]
-
-             - :gray[**Kindly open The sidebar for more information about Us and Co-ops😊🅿️.**]
-             """)
         st.write(":blue[**Purchase dataframe**]")
         st.dataframe(inventory_data)
         
@@ -140,10 +133,13 @@ def clear_form():
 
 def footer():
      with st.sidebar:
-          st.header(":blue[**Saint Inc. 2024**]")
+          st.header(":blue[**Mthoe Saps Construction technologies. 2024**]")
     #footer
      st.divider()
      st.write(":gray[**Follow our company on social media**]")
+     st.write(":gray[***Instagram page**]")
+     st.write(":gray[***LinkeIn page**]")
+     
 
      with st.container(border=True):
         st.write(":gray[**Report a bug**]")
