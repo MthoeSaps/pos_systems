@@ -19,14 +19,9 @@ def pos_system():
     st.toast("Pos System", icon="🅿️")
     colored_header(
         label = "**POS System 🅿️**",
-        description = "**Saint Inc/Mthoe Sapps. Payment Management Demo**",
+        description = "**Saint Inc/Mthoe Sapps. Point of Sale Management System**",
         color_name = "blue-70"
     )
-    st.write("- :gray[**Welcome to POS system, Our Valued Customer**]")
-    st.write("""
-             - :gray[**Payment Designed by Mthokozisi Sapuwa and Saint Inc. With the purpose to support SMEs process Payments and payment data efficiently.**]
-             """)
-    st.divider()
     
     st.write("- :blue[**POS form, fill & submit to get started**]")
     
@@ -134,36 +129,40 @@ def clear_form():
 def footer():
      with st.sidebar:
           st.header(":blue[**Mthoe Saps Construction technologies. 2024**]")
-    #footer
-     st.divider()
-     st.write(":gray[**Follow our company on social media**]")
-     st.write(":gray[***Instagram page**]")
-     st.write(":gray[***LinkeIn page**]")
+          st.write("- :gray[**Welcome to POS system, Our Valued Customer**]")
+          st.write("""
+             - :gray[**Payment Designed by Mthokozisi Sapuwa and Saint Inc. With the purpose to support SMEs process Payments and payment data efficiently.**]
+             """)
+          st.divider()
+          #footer
+          st.divider()
+          st.write(":gray[**Follow our company on social media**]")
+          st.write(":gray[***Instagram page**]")
+          st.write(":gray[***LinkeIn page**]")
      
 
-     with st.container(border=True):
-        st.write(":gray[**Report a bug**]")
-        st.write("""- **Talk to our team of active developers if youre having trouble with the app**""")
-        badge(type="github", name = "Crazypapi6" ,url="https://github.com/Crazypapi6")
+          with st.container(border=True):
+              st.write(":gray[**Report a bug**]")
+              st.write("""- **Talk to our team of active developers if youre having trouble with the app**""")
+              badge(type="github", name = "Crazypapi6" ,url="https://github.com/Crazypapi6")
 
-     with st.container(border=True):
-        st.write(":gray[**Donate to our cause**]")
-        st.write("""- **10% of the women and children in the world go to be hungry, Its our vision to see them fed**""")
-        st.markdown("""
-<a href="https://www.buymeacoffee.com/supremecro7"><img src="https://img.buymeacoffee.com/button-api/?text=Feed a soul&emoji=🐼&slug=supremecro7&button_colour=5F7FFF&font_colour=ffffff&font_family=Arial&outline_colour=000000&coffee_colour=FFDD00" /></a>
-                     """,
-                     unsafe_allow_html=True)
+          with st.container(border=True):
+              st.write(":gray[**Donate to our cause**]")
+              st.write("""- **10% of the women and children in the world go to be hungry, Its our vision to see them fed**""")
+              st.markdown("""
+              <a href="https://www.buymeacoffee.com/supremecro7"><img src="https://img.buymeacoffee.com/button-api/?text=Feed a soul&emoji=🐼&slug=supremecro7&button_colour=5F7FFF&font_colour=ffffff&font_family=Arial&outline_colour=000000&coffee_colour=FFDD00" /></a>
+              """,
+              unsafe_allow_html=True)
     
-     op,op2,op3 = st.columns(3)
-     with op:
-        st.write("- [Terms of sale](https://github.com/Crazypapi6)")
-        st.write("- [Terms of use](https://github.com/Crazypapi6)")
-     with op2:
-        st.write("- [Privacy Statement](https://github.com/Crazypapi6)")
-        st.write("- [Service Agreement](https://github.com/Crazypapi6)")
-     with op3:
-        st.write("- [Software License](https://github.com/Crazypapi6)")
-        st.write("- [Trademarks](https://github.com/Crazypapi6)")    
+          
+             st.write("- [Terms of sale](https://github.com/Crazypapi6)")
+             st.write("- [Terms of use](https://github.com/Crazypapi6)")
+         
+             st.write("- [Privacy Statement](https://github.com/Crazypapi6)")
+             st.write("- [Service Agreement](https://github.com/Crazypapi6)")
+     
+             st.write("- [Software License](https://github.com/Crazypapi6)")
+             st.write("- [Trademarks](https://github.com/Crazypapi6)")    
             
 if __name__ == "__main__":
     pos_system()
