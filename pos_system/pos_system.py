@@ -19,7 +19,7 @@ def pos_system():
     st.toast("Pos System", icon="🅿️")
     colored_header(
         label = "**POS System 🅿️**",
-        description = "**Saint Inc/Mthoe Sapps. Point of Sale Management System**",
+        description = "**Saint Inc/Mthoe Sapps. Point of Sale Management System. Expand Sidebar for More**",
         color_name = "blue-70"
     )
     
