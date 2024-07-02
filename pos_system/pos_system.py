@@ -155,14 +155,14 @@ def footer():
               unsafe_allow_html=True)
     
           
-             st.write("- [Terms of sale](https://github.com/Crazypapi6)")
-             st.write("- [Terms of use](https://github.com/Crazypapi6)")
+              st.write("- [Terms of sale](https://github.com/Crazypapi6)")
+              st.write("- [Terms of use](https://github.com/Crazypapi6)")
          
-             st.write("- [Privacy Statement](https://github.com/Crazypapi6)")
-             st.write("- [Service Agreement](https://github.com/Crazypapi6)")
+              st.write("- [Privacy Statement](https://github.com/Crazypapi6)")
+              st.write("- [Service Agreement](https://github.com/Crazypapi6)")
      
-             st.write("- [Software License](https://github.com/Crazypapi6)")
-             st.write("- [Trademarks](https://github.com/Crazypapi6)")    
+              st.write("- [Software License](https://github.com/Crazypapi6)")
+              st.write("- [Trademarks](https://github.com/Crazypapi6)")    
             
 if __name__ == "__main__":
     pos_system()
