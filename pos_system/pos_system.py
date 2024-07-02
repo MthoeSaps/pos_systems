@@ -16,7 +16,7 @@ LOGGER = get_logger(__name__)
 
 def pos_system():
     st.set_page_config(page_title="Saint Inc.", page_icon=":🅿️:", initial_sidebar_state="collapsed")     
-    st.toast("Pos System", icon="🅿️")
+    st.toast("MS Tech Hybrid POS System", icon="🅿️")
     colored_header(
         label = "**POS System 🅿️**",
         description = "**Saint Inc/Mthoe Sapps. Point of Sale Management System. Expand Sidebar for More**",
