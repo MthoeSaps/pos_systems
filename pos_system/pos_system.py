@@ -15,7 +15,7 @@ from streamlit_extras.badges import badge
 LOGGER = get_logger(__name__)
 
 def pos_system():
-    st.set_page_config(page_title="Saint Inc.", page_icon=":🅿️:", initial_sidebar_state="collapsed")     
+    st.set_page_config(page_title="MS Tech POS.", page_icon=":🅿️:", initial_sidebar_state="collapsed")     
     st.toast("MS Tech Hybrid POS System", icon="🅿️")
     colored_header(
         label = "**POS System 🅿️**",
