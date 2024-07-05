@@ -17,14 +17,14 @@ from streamlit_extras.badges import badge
 LOGGER = get_logger(__name__)
 
 def pos_system():
-    st.set_page_config(page_title="Saint Inc.", page_icon=":🅿️:", initial_sidebar_state="collapsed")     
+    st.set_page_config(page_title="kwaMondli", page_icon=":🅿️:", initial_sidebar_state="collapsed")     
     st.toast("KwaMondli Pos System", icon="🅿️")
     colored_header(
         label = "**KwaMondli POS System 🅿️**",
         #description = "**Saint Inc/Mthoe Sapps. Payment Management Demo**",
         color_name = "blue-70"
     )
-    st.write("- :gray[**Welcome to KwaMondli POS system, Our Valued Customer**]")
+    st.write("- :gray[**Welcome to KwaMondli POS system**]")
     st.write("""
              - :gray[**Open the sidebar for more information about Us and Co-ops😊🅿️.**]
              """)
