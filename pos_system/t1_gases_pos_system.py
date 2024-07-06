@@ -60,7 +60,7 @@ def pos_system():
             st.write(f" 💰 :orange[Item Price:] ${item_price:.2f}")
             st.write(f" 💹 :orange[Item Quantity:] {item_quantity}")
             st.write(f" 🅿️ :orange[Total:] ${total:.2f}")
-            save_transaction(item_price, item_quantity, total, "Ecocash")
+            save_transaction(item_price, item_quantity, total)
             clear_form()
         
 #__add a "Clear" button
