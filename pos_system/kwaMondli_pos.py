@@ -1,7 +1,7 @@
 import streamlit as st 
 import pandas as pd
 import time
-import pdfplumber
+#import pdfplumber
 #from escpos.printer import Usb
 
 #__load the excel file
