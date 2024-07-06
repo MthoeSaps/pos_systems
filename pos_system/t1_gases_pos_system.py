@@ -67,7 +67,7 @@ def pos_system():
         if st.button("Clear"):
             clear_form()   
             
-def save_transaction(customer_name, item_name, item_price, item_quantity, total, payment_method):
+def save_transaction(item_price, item_quantity, total):
     """Helper function to save transaction data to a CSV file"""
     transaction_data = {
         #"Customer Name":[customer_name],
@@ -75,24 +75,23 @@ def save_transaction(customer_name, item_name, item_price, item_quantity, total,
         "Item Price":[item_price],
         "Item Quantity":[item_quantity],
         "Total":[total],
-        "Payment Method":[payment_method]
         }
     #__create the dataframe
     df = pd.DataFrame(transaction_data)
     #st.dataframe(df)
      
     #__check if csv file exists
-    if not os.path.exists("pos_system\dbs\T1_gases_pos_transactions.csv"):
-        df.to_csv("pos_system\dbs\T1_gases_pos_transactions.csv", index = False)
+    if not os.path.exists("pos_system\dbs\pos_transactions.csv"):
+        df.to_csv("pos_system\dbs\pos_transactions.csv", index = False)
     else:
-        df.to_csv("pos_system\dbs\T1_gases_pos_transactions.csv", mode="a", index=False, header=not os.path.exists("pos_system\dbs\T1_gases_pos_transactions.csv"))
+        df.to_csv("pos_system\dbs\pos_transactions.csv", mode="a", index=False, header=not os.path.exists("pos_system\dbs\pos_transactions.csv"))
         st.success("Transaction Saved Succesfully!", icon ="🅿️")
         
 def display_inventory():
     """Function to display inventory system"""
     #__read the csv file
-    if os.path.exists("pos_system\dbs\T1_gases_pos_transactions.csv"):
-        df = pd.read_csv("pos_system\dbs\T1_gases_pos_transactions.csv")
+    if os.path.exists("pos_system\dbs\pos_transactions.csv"):
+        df = pd.read_csv("pos_system\dbs\pos_transactions.csv")
         
         #__group the data by item name and calculate the total quantity
         inventory_data = df.groupby("Item Price")["Item Quantity"].sum().reset_index()
