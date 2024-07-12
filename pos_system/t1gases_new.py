@@ -3,8 +3,8 @@ import pandas as pd
 from datetime import datetime
 
 st.set_page_config(page_title="T1 gases pos🖥")
-with st.container(border=True):
-    st.subheader("T1 Gases Pos", divider=True)
+#with st.container(border=True):
+    #st.subheader("T1 Gases Pos", divider=True)
 def calculate_gas_sold(amount_paid):
     gas_price = 2.00  # $2 per 1kg of gas
     gas_sold = amount_paid / gas_price
@@ -54,7 +54,7 @@ def reset_database():
     df.to_excel('pos_system/dbs/t1gases_dbs.xlsx', index=False)
 
 def main():
-    st.title("Gas Selling App")
+    st.title("T1 Gases POS App")
     st.write("Price: $2.00 per 1kg of gas")
 
     # Load the existing Excel file
