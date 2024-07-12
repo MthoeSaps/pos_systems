@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-st.set_page_config(page_name="T1 gases pos")
+st.set_page_config(page_title="T1 gases pos🖥")
 with st.container(border=True):
     st.subheader("T1 Gases Pos", divider=True)
 def calculate_gas_sold(amount_paid):
